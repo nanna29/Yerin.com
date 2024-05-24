@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* 버튼 기본 값 없애기 */
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.mainWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 25px;
+  > img {
+    width: 132px;
+    height: 35px;
+  }
+}
+
+/* navigator의 배경색을 검정색으로 설정 */
+.navigator {
+  background-color: #000;
+  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* nav-item을 중앙에 정렬 */
+  margin-left: -115px;
+}
+
+/* nav-item의 기본 글자색을 흰색으로 설정 */
+.nav-item .nav-link {
+  color: #fff;
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
+}
+
+/* nav-item에 마우스를 올렸을 때 글자색을 노란색으로 변경 */
+.nav-item {
+  padding-right: 35px;
+  font-family: Pretendard-SemiBold;
+}
+.nav-link:hover {
+  color: #657eff;
+}
+
+/* nav-item을 가로로 정렬 */
+.navbar-nav {
+  list-style: none; /* 기본 목록 스타일 제거 */
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail {
+  background-image: url("/image/mainImage.png");
+  background-size: cover; /* 이미지가 요소를 완전히 덮도록 설정합니다 */
+  background-position: center; /* 이미지의 중심을 요소의 중심에 맞춥니다 */
+  background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정합니다 */
+  width: 100vw; /* 요소의 너비를 화면 너비로 설정합니다 */
+  height: 100vh; /* 요소의 높이를 화면 높이로 설정합니다 */
+  display: flex;
+  position: relative;
+}
+
+.thumbnail p {
+  color: white;
+  font-size: 100px;
+  position: absolute; /* 자식 요소를 absolute로 설정합니다 */
+  top: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 top을 50%로 설정합니다 */
+  left: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 left를 50%로 설정합니다 */
+  transform: translate(-50%, -50%); /* 요소를 정확한 중앙으로 이동합니다 */
+  text-align: center; /* 텍스트를 가운데 정렬합니다 */
+  font-family: pristina;
+}
+.letterBtn {
+  background-color: rgba(101, 126, 255, 0.7);
+  position: absolute; /* 자식 요소를 absolute로 설정합니다 */
+  top: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 top을 50%로 설정합니다 */
+  left: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 left를 50%로 설정합니다 */
+  transform: translate(-50%, 150px); /* 요소를 정확한 중앙으로 이동합니다 */
+  text-align: center; /* 텍스트를 가운데 정렬합니다 */
+  color: white;
+  padding: 13px 55px 13px 55px;
+  font-family: Pretendard-SemiBold;
+  border-radius: 5px;
+}
