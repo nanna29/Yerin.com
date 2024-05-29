@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Pristina";
-  src: url("/font/PRISTINA.TTF") format("ttf");
+  src: url("font/PRISTINA.TTF") format("ttf");
 }
 
 @font-face {
   font-family: "Pretendard-Bold";
-  src: url("/font/Pretendard-Bold.woff") format("woff");
+  src: url("font/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard-SemiBold";
-  src: url("/font/Pretendard-SemiBold.woff") format("woff");
+  src: url("font/Pretendard-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard-ExtraBold";
-  src: url("/font/Pretendard-ExtraBold.woff") format("woff");
+  src: url("font/Pretendard-ExtraBold.woff") format("woff");
 }
