@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   user-select: none; /* 텍스트 선택 비활성화 */
 }
 
@@ -69,4 +68,41 @@ a {
   list-style: none; /* 기본 목록 스타일 제거 */
   display: flex;
   flex-direction: row;
+}
+.swiper-container {
+  overflow-x: hidden;
+  display: flex;
+}
+.swiper-wrapper {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr); /* 3열 그리드 설정 */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b6a368;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  text-align: left;
+  font-family: Pretendard-Bold;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-left: 50px;
+  > span {
+    font-size: 14px;
+  }
 }
