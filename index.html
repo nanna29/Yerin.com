@@ -27,19 +27,19 @@
       <div class="nav" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#home">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#vinyl">VINYL</a>
+            <a class="nav-link" href="vinyl/vinyl.html">VINYL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">GALLERY</a>
+            <a class="nav-link" href="gallery/gallery.html">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#video">VIDEO</a>
+            <a class="nav-link" href="video/video.html">VIDEO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#to">TO.YERIN</a>
+            <a class="nav-link" href="letter/letter.html">TO.YERIN</a>
           </li>
         </ul>
       </div>
@@ -50,17 +50,19 @@
         <!-- Thumbnail-->
         <div class="thumbnail">
           <p>Every Letter<br />I Sent You</p>
-          <div class="letterBtn">사랑을 담아, 예린</div>
+          <a class="nav-link" href="#letter">
+            <div class="letterBtn">사랑을 담아, 예린</div>
+          </a>
         </div>
         <!-- Gallery-->
         <div class="gallery">
           <p>GALLERY <span>백예린의 인생샷을 확인하세요</span></p>
           <div class="imgGallery">
-            <img src="/image/예린1.png" />
-            <img src="/image/예린2.png" />
-            <img src="/image/예린3.png" />
-            <img src="/image/예린4.png" />
-            <img src="/image/예린5.png" />
+            <img src="image/예린1.png" />
+            <img src="image/예린2.png" />
+            <img src="image/예린3.png" />
+            <img src="image/예린4.png" />
+            <img src="image/예린5.png" />
             <div class="moreView">
               <img src="image/Vector.png" />
             </div>
@@ -69,22 +71,32 @@
         <!-- Vinyl-->
         <div class="vinyl">
           <p>VINYL <span>백예린의 전체 음반을 한눈에 만나보세요</span></p>
-          <img src="/image/vinyl.png" />
-          <div class="vinylBtn">음반 들으러 가기</div>
+          <img src="image/vinyl.png" />
+          <a class="nav-link" href="vinyl/vinyl.html">
+            <div class="vinylBtn">음반 들으러 가기</div>
+          </a>
         </div>
 
         <!-- Video-->
         <div class="video">
           <p>VIDEO <span>백예린의 최애 직캠을 만나보세요</span></p>
-          <img src="/image/video.png" />
-          <div class="videoBtn">직캠 보러 가기</div>
+          <img src="image/video.png" />
+          <a class="nav-link" href="video/video.html">
+            <div class="videoBtn">직캠 보러 가기</div>
+          </a>
         </div>
 
         <!-- Letter-->
-        <div class="letter">
+        <div id="letter" class="letter">
           <p>TO.YERIN <span>사랑을 담아, 예린에게 편지를 보내보세요</span></p>
-          <img src="/image/vinyl.png" />
-          <div class="letterBtn2">편지 보내러 가기</div>
+          <div class="temp">
+            <div class="letterBg">
+              <img src="image/letter.png" />
+            </div>
+          </div>
+          <a class="nav-link" href="letter/letter.html">
+            <div class="letterBtn2">편지 보내러 가기</div>
+          </a>
         </div>
       </div>
     </div>
