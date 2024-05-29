@@ -59,7 +59,8 @@ a {
   padding-right: 35px;
   font-family: Pretendard-SemiBold;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #657eff;
 }
 

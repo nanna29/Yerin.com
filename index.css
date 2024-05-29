@@ -20,7 +20,9 @@ button {
   justify-content: center;
   text-align: center;
 }
-
+a {
+  text-decoration-line: none;
+}
 .logo {
   margin-left: 25px;
   > img {
@@ -55,7 +57,9 @@ button {
   padding-right: 35px;
   font-family: Pretendard-SemiBold;
 }
-.nav-link:hover {
+
+.nav-link:hover,
+.nav-link.active {
   color: #657eff;
 }
 
@@ -127,11 +131,19 @@ button {
     }
   }
   .moreView {
-    border-radius: 10px;
-    > img {
-      width: 66px;
-      height: 66px;
-    }
+    width: 100%; /* imgGallery의 이미지와 같은 너비로 설정 */
+    height: 0; /* 높이를 0으로 설정하여 아래의 비율 기반으로 조정합니다 */
+    padding-top: 100%; /* 너비의 비율에 맞추어 높이 설정 */
+    position: relative;
+    border-radius: 5px;
+  }
+  .moreView img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 20%; /* 이미지가 부모 요소를 벗어나지 않도록 설정 */
+    max-height: 20%; /* 이미지가 부모 요소를 벗어나지 않도록 설정 */
   }
 }
 
