@@ -51,10 +51,9 @@ button {
   display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
 }
 
-/* nav-item에 마우스를 올렸을 때 글자색을 노란색으로 변경 */
 .nav-item {
   padding-right: 35px;
-  font-family: Pretendard-SemiBold;
+  font-family: sans-serif;
 }
 .nav-link:hover {
   color: #657eff;
@@ -104,7 +103,6 @@ button {
 
 .gallery {
   background-color: #f9f9f9;
-
   .imgGallery {
     display: grid;
     margin-bottom: 80px;
@@ -139,7 +137,7 @@ button {
   background-size: cover;
   > p {
     text-align: left;
-    font-family: Pretendard-Bold;
+    font-family: Pretendard-SemiBold;
     font-size: 40px;
     > span {
       font-size: 14px;
