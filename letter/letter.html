@@ -6,7 +6,7 @@
     <title>Yerin.com</title>
     <link rel="stylesheet" href="letter.css" />
     <link rel="stylesheet" href="../font/font.css" />
-    <script src="letter.js"></script>
+    <script defer src="letter.js"></script>
   </head>
   <body>
     <!-- Navigation-->
@@ -63,7 +63,12 @@
                 <hr class="letterHr2" />
                 <div style="display: flex; margin-left: 530px">
                   <p>from.</p>
-                  <input style="width: 700px" type="text" placeholder="이름" />
+                  <input
+                    id="nameInput1"
+                    style="width: 700px"
+                    type="text"
+                    placeholder="이름"
+                  />
                 </div>
               </div>
             </div>
@@ -72,17 +77,26 @@
           <div class="sendContent">
             <div class="sendBox">
               <p>Name</p>
-              <input type="text" placeholder="이름" />
+              <input id="nameInput2" type="text" placeholder="이름" />
               <p>Phone</p>
               <input type="tel" placeholder="전화번호" />
               <p>Email</p>
               <input type="email" placeholder="이메일" />
-              <div class="vinylBtn">Send Letter</div>
+              <div class="sendBtn" id="sendButton">Send Letter</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- 모달 창 -->
+    <div id="Modal" class="modal">
+      <div class="modal-content">
+        <p>💌 편지가 전송되었습니다 💌</p>
+        <button class="closeBtn">닫기</button>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <a class="logo2" href="../index.html">

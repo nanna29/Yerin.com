@@ -44,6 +44,41 @@ textarea {
     height: 35px;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-family: Pretendard-Regular;
+}
+
+.closeBtn {
+  background-color: #93a4ff;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: Pretendard-SemiBold;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: #8696e7;
+}
 
 /* navigator의 배경색을 검정색으로 설정 */
 .navigator {
@@ -165,7 +200,7 @@ textarea {
     border-radius: 15px;
   }
 }
-.vinylBtn {
+.sendBtn {
   background-color: rgba(101, 126, 255, 0.7);
   color: white;
   padding: 13px 55px 13px 55px;
@@ -176,6 +211,7 @@ textarea {
   margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
   margin-bottom: 80px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .footer {
