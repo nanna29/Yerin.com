@@ -47,6 +47,7 @@ a {
   text-decoration: none; /* 밑줄 제거 */
   padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
   display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
+  font-size: 16px;
 }
 
 /* nav-item에 마우스를 올렸을 때 글자색을 노란색으로 변경 */
@@ -96,8 +97,10 @@ a {
       max-height: 311px;
       width: 100%;
       height: auto; */
-      width: 400px;
-      height: 240px;
+      max-width: 400px;
+      max-height: 240px;
+      width: 100%;
+      height: auto;
       /* margin-right: 50px; */
     }
   }
@@ -136,4 +139,67 @@ a {
   .vinyls a:hover span {
     opacity: 1; /* 호버 시 글자가 보이도록 설정 */
   }
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .nav {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer .nav-item {
+  padding: 0 10px;
+}
+
+.footer .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .nav-link:hover {
+  color: #657eff;
+}
+.footer p {
+  color: white;
+  font-family: Pretendard-Regular;
+  font-size: 14px;
+  margin-top: 40px;
+  text-align: center;
+  margin-right: 30px;
+}
+.sns {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 25px;
+  .youtube {
+    width: 20px;
+    height: 14px;
+  }
+  img {
+    /* padding-right: 30px; */
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.logo2 {
+  margin-right: 30px;
+  img {
+    width: 130px;
+    height: 32px;
+  }
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #2d2d2d;
+  margin: 20px 100px;
+  margin-top: 15px;
 }
