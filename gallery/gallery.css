@@ -73,7 +73,18 @@ a {
   text-align: center;
   background-color: white;
 }
-
+.mainTitle {
+  text-align: left;
+  font-family: Pretendard-Bold;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  > span {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+}
 .gallery {
   > p {
     text-align: left;
@@ -102,6 +113,7 @@ input {
   padding: 20px;
   text-align: center;
   color: #fff;
+  margin-top: 100px;
 }
 
 .footer .nav {
@@ -150,4 +162,12 @@ input {
     width: 130px;
     height: 32px;
   }
+}
+
+.whiteHr {
+  border: 0;
+  height: 2px;
+  background: #2d2d2d;
+  margin: 20px 100px;
+  margin-top: 15px;
 }

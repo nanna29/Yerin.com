@@ -117,6 +117,7 @@ iframe {
   min-height: 315px;
   width: 100%;
   height: auto;
+  margin-bottom: 150px;
 }
 
 .footer {
@@ -124,7 +125,7 @@ iframe {
   padding: 20px;
   text-align: center;
   color: #fff;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   position: relative;
 }
 
