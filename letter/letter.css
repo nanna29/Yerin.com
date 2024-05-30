@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  user-select: none; /* 텍스트 선택 비활성화 */
+}
+
+/* 버튼 기본 값 없애기 */
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  /* appearance: none; */
+  font-family: Pretendard-Semibold;
+}
+
+textarea {
+  resize: none; /* 사용자가 크기를 조정하지 못하게 설정 */
+  font-family: Pretendard-Semibold;
+  border: none;
+  outline: none;
+  background-color: #dfe4fe;
+}
+
+.logo {
+  margin-left: 25px;
+  img {
+    width: 132px;
+    height: 35px;
+  }
+}
+
+/* navigator의 배경색을 검정색으로 설정 */
+.navigator {
+  background-color: #000;
+  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  display: flex;
+
+  align-items: center;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+
+/* nav-item의 기본 글자색을 흰색으로 설정 */
+.nav-item .nav-link {
+  color: #fff;
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
+  font-size: 16px;
+}
+
+/* nav-item에 마우스를 올렸을 때 글자색을 노란색으로 변경 */
+.nav-item {
+  padding-right: 35px;
+  font-family: Pretendard-SemiBold;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #657eff;
+}
+
+/* nav-item을 가로로 정렬 */
+.navbar-nav {
+  list-style: none; /* 기본 목록 스타일 제거 */
+  display: flex;
+  flex-direction: row;
+}
+.mainWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.letter {
+  .letterWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .letterBox {
+      padding: 30px;
+      width: 700px;
+    }
+    .letterContant {
+      background-color: #dfe4fe;
+      border-radius: 15px;
+      /* margin-right: 50px; */
+      p {
+        font-family: Pretendard-SemiBold;
+        font-size: 15px;
+        margin-right: 10px;
+      }
+    }
+    .sendContent {
+      margin-left: 100px;
+      margin-right: 50px;
+      margin-top: 50px;
+      input {
+        padding: 15px;
+        margin-bottom: 30px;
+      }
+      p {
+        text-align: left;
+        margin-bottom: 8px;
+        margin-left: 5px;
+        font-family: Pretendard-SemiBold;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.mainTitle {
+  text-align: left;
+  font-family: Pretendard-Bold;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  > span {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+}
+
+.letterHr {
+  border: 0;
+  height: 1px;
+  background: #adadad;
+  margin: 20px 0 20px 0;
+}
+
+.letterHr2 {
+  border: 0;
+  height: 0.5px;
+  background: #6f6f6f;
+  margin: 20px 0 20px 0;
+}
+
+.sendBox {
+  input {
+    background: #dfe4fe;
+    border-radius: 15px;
+  }
+}
+.vinylBtn {
+  background-color: rgba(101, 126, 255, 0.7);
+  color: white;
+  padding: 13px 55px 13px 55px;
+  font-family: Pretendard-SemiBold;
+  border-radius: 10px;
+  width: fit-content;
+  display: block; /* 블록 요소로 설정 */
+  margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
+  margin-bottom: 80px;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.footer .nav {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer .nav-item {
+  padding: 0 10px;
+}
+
+.footer .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer .nav-link:hover {
+  color: #657eff;
+}
+.footer p {
+  color: white;
+  font-family: Pretendard-Regular;
+  font-size: 14px;
+  margin-top: 40px;
+  text-align: center;
+  margin-right: 30px;
+}
+.sns {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 25px;
+  .youtube {
+    width: 20px;
+    height: 14px;
+  }
+  img {
+    /* padding-right: 30px; */
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.logo2 {
+  margin-right: 30px;
+  img {
+    width: 130px;
+    height: 32px;
+  }
+}
+
+.whiteHr {
+  border: 0;
+  height: 2px;
+  background: #2d2d2d;
+  margin: 20px 100px;
+  margin-top: 15px;
+}

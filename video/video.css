@@ -71,6 +71,7 @@ a {
   display: flex;
   flex-direction: row;
 }
+
 .swiper-container {
   overflow-x: hidden;
   display: flex;
@@ -102,7 +103,7 @@ p {
   text-align: left;
   font-family: Pretendard-Bold;
   font-size: 40px;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 50px;
   > span {
     font-size: 14px;
@@ -116,7 +117,6 @@ iframe {
   min-height: 315px;
   width: 100%;
   height: auto;
-  margin-bottom: 220px;
 }
 
 .footer {
@@ -124,6 +124,8 @@ iframe {
   padding: 20px;
   text-align: center;
   color: #fff;
+  margin-top: 150px;
+  position: relative;
 }
 
 .footer .nav {

@@ -107,6 +107,7 @@ a {
 
 .gallery {
   background-color: #f9f9f9;
+  padding-top: 15px;
   .imgGallery {
     display: grid;
     margin-bottom: 80px;
@@ -117,16 +118,12 @@ a {
     img {
       width: 100%;
       height: auto;
-      max-width: 332px;
-      max-height: 332px;
       min-width: 200px;
       min-width: 200px;
     }
     a {
       width: 100%;
       height: auto;
-      max-width: 332px;
-
       min-width: 200px;
       min-width: 200px;
     }
@@ -206,6 +203,7 @@ a {
 .video {
   background-color: #f9f9f9;
   > p {
+    margin-bottom: 30px;
     text-align: left;
     font-family: Pretendard-Bold;
     font-size: 40px;
@@ -240,6 +238,7 @@ a {
   background-size: cover;
   > p {
     text-align: right;
+    margin-bottom: 30px;
     font-family: Pretendard-Bold;
     font-size: 38px;
     margin-top: 30px;
