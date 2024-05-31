@@ -104,6 +104,9 @@ a {
   font-family: Pretendard-SemiBold;
   border-radius: 5px;
 }
+.letterBtn:hover {
+  background-color: #5364b2;
+}
 
 .gallery {
   background-color: #f9f9f9;
@@ -139,20 +142,9 @@ a {
       font-size: 14px;
     }
   }
-  .moreView {
-    width: 100%; /* imgGallery의 이미지와 같은 너비로 설정 */
-    height: 0; /* 높이를 0으로 설정하여 아래의 비율 기반으로 조정합니다 */
-    padding-top: 100%; /* 너비의 비율에 맞추어 높이 설정 */
-    position: relative;
-    border-radius: 10px;
-  }
-  .moreView img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 20%; /* 이미지가 부모 요소를 벗어나지 않도록 설정 */
-    max-height: 20%; /* 이미지가 부모 요소를 벗어나지 않도록 설정 */
+  .more:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.94);
   }
 }
 
@@ -188,16 +180,8 @@ a {
     margin-bottom: 80px;
   }
 }
-
-.moreView {
-  background-color: #d9dfff;
-  position: relative;
-  > img {
-    position: absolute; /* 자식 요소를 absolute로 설정합니다 */
-    top: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 top을 50%로 설정합니다 */
-    left: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 left를 50%로 설정합니다 */
-    transform: translate(-50%, -50%); /* 요소를 정확한 중앙으로 이동합니다 */
-  }
+.vinylBtn:hover {
+  background-color: #7f8dd9;
 }
 
 .video {
@@ -232,7 +216,9 @@ a {
     margin-bottom: 80px;
   }
 }
-
+.videoBtn:hover {
+  background-color: #7f8dd9;
+}
 .letter {
   background-image: url("image/bg2.png");
   background-size: cover;
@@ -279,6 +265,9 @@ a {
     padding-bottom: 30px;
     overflow: visible;
   }
+}
+.letterBtn2:hover {
+  background-color: #7f8dd9;
 }
 .footer {
   background-color: #000;

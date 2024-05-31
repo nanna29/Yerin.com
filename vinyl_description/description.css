@@ -102,7 +102,7 @@ a {
 }
 .card:hover {
   transition: all 0.2s ease-in-out;
-  transform: scale(1.03);
+  transform: scale(0.97);
 }
 
 .footer {
@@ -166,4 +166,45 @@ hr {
   background: #848484;
   margin: 40px 70px;
   margin-bottom: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  h2 {
+    margin-bottom: 18px;
+  }
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-family: Pretendard-Regular;
+}
+
+.closeBtn {
+  background-color: #93a4ff;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: Pretendard-SemiBold;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  background-color: #8696e7;
 }
