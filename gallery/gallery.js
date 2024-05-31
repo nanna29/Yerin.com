@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery img");
+  images.forEach((img, index) => {
+    const randomHeight = 150 + Math.floor(Math.random() * 200); // Height between 150px and 350px
+    img.style.height = `${randomHeight}px`;
+  });
+});
