@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  user-select: none; /* 텍스트 선택 비활성화 */
+  user-select: none;
 }
 
 /* 버튼 기본 값 없애기 */
@@ -31,10 +31,9 @@ a {
   }
 }
 
-/* navigator의 배경색을 검정색으로 설정 */
 .navigator {
   background-color: #000;
-  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  padding: 10px;
   display: flex;
   align-items: center;
 }
@@ -45,12 +44,11 @@ a {
   justify-content: right;
 }
 
-/* nav-item의 기본 글자색을 흰색으로 설정 */
 .nav-item .nav-link {
   color: #fff;
-  text-decoration: none; /* 밑줄 제거 */
-  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
-  display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
 }
 
 .nav-item {
@@ -63,20 +61,19 @@ a {
   color: #657eff;
 }
 
-/* nav-item을 가로로 정렬 */
 .navbar-nav {
-  list-style: none; /* 기본 목록 스타일 제거 */
+  list-style: none;
   display: flex;
   flex-direction: row;
 }
 
 .thumbnail {
   background-image: url("image/mainImage.png");
-  background-size: cover; /* 이미지가 요소를 완전히 덮도록 설정합니다 */
-  background-position: center; /* 이미지의 중심을 요소의 중심에 맞춥니다 */
-  background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정합니다 */
-  width: 100vw; /* 요소의 너비를 화면 너비로 설정합니다 */
-  height: 100vh; /* 요소의 높이를 화면 높이로 설정합니다 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   position: relative;
 }
@@ -84,21 +81,21 @@ a {
 .thumbnail p {
   color: white;
   font-size: 100px;
-  position: absolute; /* 자식 요소를 absolute로 설정합니다 */
-  top: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 top을 50%로 설정합니다 */
-  left: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 left를 50%로 설정합니다 */
-  transform: translate(-50%, -50%); /* 요소를 정확한 중앙으로 이동합니다 */
-  text-align: center; /* 텍스트를 가운데 정렬합니다 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   font-family: pristina;
   white-space: nowrap;
 }
 .letterBtn {
   background-color: rgba(101, 126, 255, 0.7);
-  position: absolute; /* 자식 요소를 absolute로 설정합니다 */
-  top: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 top을 50%로 설정합니다 */
-  left: 50%; /* 부모 요소의 중앙을 기준으로 정렬하기 위해 left를 50%로 설정합니다 */
-  transform: translate(-50%, 150px); /* 요소를 정확한 중앙으로 이동합니다 */
-  text-align: center; /* 텍스트를 가운데 정렬합니다 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150px);
+  text-align: center;
   color: white;
   padding: 13px 55px 13px 55px;
   font-family: Pretendard-SemiBold;
@@ -114,7 +111,7 @@ a {
   .imgGallery {
     display: grid;
     margin-bottom: 80px;
-    grid-template-columns: repeat(3, 1fr); /* 3열 그리드 설정 */
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 180px;
     margin-right: 180px;
     gap: 20px;
@@ -175,8 +172,8 @@ a {
     font-family: Pretendard-SemiBold;
     border-radius: 5px;
     width: fit-content;
-    display: block; /* 블록 요소로 설정 */
-    margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
+    display: block;
+    margin: 20px auto 0;
     margin-bottom: 80px;
   }
 }
@@ -211,8 +208,8 @@ a {
     font-family: Pretendard-SemiBold;
     border-radius: 5px;
     width: fit-content;
-    display: block; /* 블록 요소로 설정 */
-    margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
+    display: block;
+    margin: 20px auto 0;
     margin-bottom: 80px;
   }
 }
@@ -241,8 +238,8 @@ a {
     font-family: Pretendard-SemiBold;
     border-radius: 5px;
     width: fit-content;
-    display: block; /* 블록 요소로 설정 */
-    margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
+    display: block;
+    margin: 20px auto 0;
     margin-bottom: 80px;
     margin-top: 50px;
   }
@@ -310,7 +307,6 @@ a {
     height: 14px;
   }
   img {
-    /* padding-right: 30px; */
     width: 16px;
     height: 16px;
   }

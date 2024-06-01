@@ -14,16 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // 현재 페이지의 URL 가져오기
-  var currentUrl = window.location.pathname.split("/").pop();
+  var currentUrl = window.location.href;
 
-  // 모든 네비게이션 링크 가져오기
   var navLinks = document.querySelectorAll(".nav-link");
 
-  // 각 링크와 현재 URL 비교하여 일치하는 경우 클래스 추가
   navLinks.forEach(function (link) {
-    var linkUrl = link.getAttribute("href").split("/").pop();
-    if (linkUrl === currentUrl) {
+    if (link.href === currentUrl) {
       link.classList.add("active");
     }
   });
