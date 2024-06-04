@@ -3,7 +3,6 @@ const scrollToTopLink2 = document.getElementById("scrollToTop2");
 
 document.addEventListener("DOMContentLoaded", function () {
   const currentUrl = window.location.href;
-
   const navLinks = document.querySelectorAll(".nav-link");
 
   navLinks.forEach(function (link) {
