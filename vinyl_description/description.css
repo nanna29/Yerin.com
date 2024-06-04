@@ -60,6 +60,10 @@ a {
   color: #657eff;
 }
 
+#temp {
+  color: #657eff;
+}
+
 .navbar-nav {
   list-style: none;
   display: flex;
