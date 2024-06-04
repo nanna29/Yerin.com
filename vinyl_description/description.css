@@ -30,6 +30,11 @@ a {
   padding: 10px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .nav {

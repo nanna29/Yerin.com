@@ -2,8 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
-  user-select: none; /* 텍스트 선택 비활성화 */
+  user-select: none;
 }
 
 /* 버튼 기본 값 없애기 */
@@ -25,12 +24,11 @@ input {
   padding: 0;
   margin: 0;
   box-shadow: none;
-  /* appearance: none; */
   font-family: Pretendard-Semibold;
 }
 
 textarea {
-  resize: none; /* 사용자가 크기를 조정하지 못하게 설정 */
+  resize: none;
   font-family: Pretendard-Semibold;
   border: none;
   outline: none;
@@ -80,13 +78,16 @@ textarea {
   background-color: #8696e7;
 }
 
-/* navigator의 배경색을 검정색으로 설정 */
 .navigator {
   background-color: #000;
-  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
+  padding: 10px;
   display: flex;
-
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .nav {
@@ -95,16 +96,14 @@ textarea {
   justify-content: right;
 }
 
-/* nav-item의 기본 글자색을 흰색으로 설정 */
 .nav-item .nav-link {
   color: #fff;
-  text-decoration: none; /* 밑줄 제거 */
-  padding: 10px; /* 필요에 따라 패딩을 조정하세요 */
-  display: inline-block; /* 블록 요소처럼 동작하도록 설정 */
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
   font-size: 16px;
 }
 
-/* nav-item에 마우스를 올렸을 때 글자색을 노란색으로 변경 */
 .nav-item {
   padding-right: 35px;
   font-family: Pretendard-SemiBold;
@@ -114,9 +113,8 @@ textarea {
   color: #657eff;
 }
 
-/* nav-item을 가로로 정렬 */
 .navbar-nav {
-  list-style: none; /* 기본 목록 스타일 제거 */
+  list-style: none;
   display: flex;
   flex-direction: row;
 }
@@ -141,7 +139,6 @@ textarea {
     .letterContant {
       background-color: #dfe4fe;
       border-radius: 15px;
-      /* margin-right: 50px; */
       p {
         font-family: Pretendard-SemiBold;
         font-size: 15px;
@@ -174,6 +171,7 @@ textarea {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 50px;
+  margin-top: 85px;
   > span {
     margin-right: 50px;
     font-size: 14px;
@@ -207,8 +205,8 @@ textarea {
   font-family: Pretendard-SemiBold;
   border-radius: 10px;
   width: fit-content;
-  display: block; /* 블록 요소로 설정 */
-  margin: 20px auto 0; /* 중앙 정렬을 위해 자동 마진 설정 */
+  display: block;
+  margin: 20px auto 0;
   margin-bottom: 80px;
   font-size: 15px;
   cursor: pointer;
@@ -256,7 +254,6 @@ textarea {
     height: 14px;
   }
   img {
-    /* padding-right: 30px; */
     width: 16px;
     height: 16px;
   }

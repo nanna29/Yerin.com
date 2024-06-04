@@ -37,6 +37,11 @@ a {
   padding: 10px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .nav {
@@ -99,7 +104,7 @@ p {
   text-align: left;
   font-family: Pretendard-Bold;
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 85px;
   margin-left: 50px;
   > span {
     font-size: 14px;
